@@ -30,7 +30,25 @@ ffmpeg -i input.mp4 -ss 00:05:10 -to 00:15:30 -c:v copy -c:a copy output2.mp4
 
 The above command uses -to to specify an exact time.
 
+## Stream download
+
+Some stream websites:
+https://kamery.ovanet.cz/
+https://lahzenegar.com/Irancell/DataScience
+
+Download M3U8 Video with FFmpeg
+
+`
+ffmpeg -i "http://example.com/video_url.m3u8" -c copy -bsf:a aac_adtstoasc "output.mp4"
+`
+
+[FFMpeg Copy Live Stream (Limit to 60s file)](https://stackoverflow.com/questions/58909322/ffmpeg-copy-live-stream-limit-to-60s-file)
+
+`
+ffmpeg -i source_hls.m3u8 -c copy -f segment -segment_time 60 -segment_wrap 2 -reset_timestamps 1 out%02d.mkv -y
+`
 
 sources:
  - https://shotstack.io/learn/use-ffmpeg-to-trim-video/
  - https://askubuntu.com/questions/396883/how-to-simply-convert-video-files-i-e-mkv-to-mp4
+ - https://windowsloop.com/download-m3u8-video-with-ffmpeg/
