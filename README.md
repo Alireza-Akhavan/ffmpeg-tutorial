@@ -52,3 +52,7 @@ sources:
  - https://shotstack.io/learn/use-ffmpeg-to-trim-video/
  - https://askubuntu.com/questions/396883/how-to-simply-convert-video-files-i-e-mkv-to-mp4
  - https://windowsloop.com/download-m3u8-video-with-ffmpeg/
+
+Some other nice tutorials:
+ - https://github.com/leandromoreira/ffmpeg-libav-tutorial
+ 
