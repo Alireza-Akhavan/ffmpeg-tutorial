@@ -58,10 +58,13 @@ ffmpeg -i "http://example.com/video_url.m3u8" -c copy -bsf:a aac_adtstoasc "outp
 ffmpeg -i source_hls.m3u8 -c copy -f segment -segment_time 60 -segment_wrap 2 -reset_timestamps 1 out%02d.mkv -y
 `
 
-sources:
+Sources:
  - https://shotstack.io/learn/use-ffmpeg-to-trim-video/
  - https://askubuntu.com/questions/396883/how-to-simply-convert-video-files-i-e-mkv-to-mp4
  - https://windowsloop.com/download-m3u8-video-with-ffmpeg/
+
+Official documentation:
+ - https://www.ffmpeg.org/ffmpeg.html
 
 Some other nice tutorials:
  - https://github.com/leandromoreira/ffmpeg-libav-tutorial
