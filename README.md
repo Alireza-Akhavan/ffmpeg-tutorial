@@ -16,8 +16,8 @@ ffmpeg -i input.mp4 -codec copy output.avi
 `
 Or simply:
 
-`$ ffmpeg -i input.mp4 output.avi
-
+`
+ffmpeg -i input.mp4 output.avi
 `
 
 ## Cut using a duration
