@@ -21,6 +21,8 @@ Or simply:
 ffmpeg -i input.mp4 output.avi
 `
 
+It is called `remuxing` , which means converting from one container to another one.  There is another convertion which is called `transcoding`.
+
 ## Cut using a duration
 
 `
