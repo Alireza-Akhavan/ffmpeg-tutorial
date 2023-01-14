@@ -5,12 +5,19 @@ Some basic FFmpeg commands:
 
 ## Convert Video by changing container
 
-If you only want to convert MKV to MP4 then you will save quality and a lot of time by just changing the containers.
+If you only want to convert MP4 to AVI then you will save quality and a lot of time by just changing the containers.
 Both of these are just wrappers over the same content so the CPU only needs to do a little work.
 Don't re encode as you will definitely lose quality.
 
+you can convert from mp4 to the container avi just by typing the follow command:
+
 `
-ffmpeg -i LostInTranslation.mkv -codec copy LostInTranslation.mp4
+ffmpeg -i input.mp4 -codec copy output.avi
+`
+Or simply:
+
+`$ ffmpeg -i input.mp4 output.avi
+
 `
 
 ## Cut using a duration
