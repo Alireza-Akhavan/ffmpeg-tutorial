@@ -14,6 +14,7 @@ you can convert from mp4 to the container avi just by typing the follow command:
 `
 ffmpeg -i input.mp4 -codec copy output.avi
 `
+
 Or simply:
 
 `
