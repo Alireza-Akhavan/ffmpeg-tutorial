@@ -3,6 +3,12 @@ video processing in python using FFmpeg
 
 Some basic FFmpeg commands:
 
+## Change Video Codec (Transcoding)
+
+`
+ffmpeg -i input.mp4 -c:v libx265 output.mp4
+`
+
 ## Convert Video by changing container
 
 If you only want to convert MP4 to AVI then you will save quality and a lot of time by just changing the containers.
