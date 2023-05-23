@@ -29,6 +29,22 @@ ffmpeg -i input.mp4 output.avi
 
 It is called `remuxing` , which means converting from one container to another one.  There is another convertion which is called `transcoding`.
 
+## compression
+
+`
+ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4
+`
+
+`libx265` is a video codec that uses the H.265 compression standard to encode video data. 
+It is a more efficient and advanced codec than its predecessor, H.264, which means it can achieve higher compression ratios while maintaining the same level of visual quality.
+
+The `-crf` option in the ffmpeg command stands for "Constant Rate Factor". It is used to adjust the quality of the compressed video output. The CRF value ranges from `0 to 51`, with lower values indicating higher quality (and larger file sizes) and higher values indicating lower quality (and smaller file sizes).
+
+In the given command, the CRF value is set to 28, which is a moderate value for maintaining a balance between quality and size. If you want to further compress the video by reducing its quality, you can increase the CRF value. 
+For example, if you increase the CRF value by 4 or 6 units, say to 32 or 34, respectively, you will get a smaller file size but at the cost of reduced video quality. 
+It's important to find the right balance between quality and size for your particular use case.
+
+
 ## Cut using a duration
 
 `
